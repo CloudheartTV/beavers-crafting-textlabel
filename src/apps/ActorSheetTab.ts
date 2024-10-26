@@ -55,7 +55,9 @@ export class ActorSheetTab {
             {
                 craftingFolder:this.craftingFolder,
             }));
-        beaversSystemInterface.actorSheetAddTab(this.app, this.html, this.data.actor, { id: Settings.ACTOR_TAB_ID, label: "Crafting" }, tabBody);
+        beaversSystemInterface.actorSheetAddTab(this.app, this.html, this.data.actor, { id: Settings.ACTOR_TAB_ID, label: label, html: `<a class="item" data-tab="effects">
+			Crafting
+		</a>` }, tabBody);
         this.activateListeners(tabBody);
     }
 
